@@ -1,0 +1,23 @@
+@tailwind base;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* + * {
+  margin-top: 1rem;
+}
+
+html,
+body {
+  background-color: theme("colors.primaryBackground");
+  @apply font-sans;
+  @apply text-base;
+  @apply leading-normal;
+  @apply max-w-screen-lg;
+}
+
+> div {
+  margin-top: 0;
+}
